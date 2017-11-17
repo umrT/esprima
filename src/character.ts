@@ -33,7 +33,7 @@ export const Character = {
     // https://tc39.github.io/ecma262/#sec-names-and-keywords
 
     isIdentifierStart(cp: number): boolean {
-        return (cp === 0x24) || (cp === 0x5F) ||  // $ (dollar) and _ (underscore)
+        return (cp === 0x24) || (cp === 0x5F) || (cp === 0x3A) || // $ (dollar) and _  and :(underscore)
             (cp >= 0x41 && cp <= 0x5A) ||         // A..Z
             (cp >= 0x61 && cp <= 0x7A) ||         // a..z
             (cp === 0x5C) ||                      // \ (backslash)
